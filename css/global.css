@@ -354,4 +354,8 @@ footer {
         padding-top: 3vh;
         font-size: 18vw;
     }
+
+    .cursor {
+        display: none;
+    }
 }
