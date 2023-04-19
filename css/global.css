@@ -1,0 +1,357 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Pask";
+    font-display: swap;
+    src: url("/css/fonts/pask.woff");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-Light.woff");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-Regular.woff");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-Medium.woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-SemiBold.woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-Bold.woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-Black.woff");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Mazius";
+    font-display: swap;
+    src: url("/css/fonts/MaziusDisplay-Italic.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-display: swap;
+    src: url("/css/fonts/HKGrotesk-Italic.woff");
+    font-style: italic;
+}
+
+/* Général */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #28262C;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Pask";
+    text-transform: uppercase;
+    color: #BBAEF7;
+    font-size: 11.8vw;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: "Pask";
+    text-transform: uppercase;
+    color: #BBAEF7;
+    font-size: 11.8vw;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: "Mazius";
+    text-transform: uppercase;
+    font-size: 12vw;
+    color: #28262C;
+    font-weight: 200;
+}
+
+.layout-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #BBAEF7;
+    z-index: 4;
+}
+
+a:hover {
+    color: #ddd6fc;
+}
+
+.cursor {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #FF720D;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-out;
+    z-index: 100;
+    pointer-events: none;
+    font-family: "HK Grotesk";
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #28262C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-open .cursor {
+    background-color: #28262C;
+    z-index: 10;
+}
+
+.grow {
+    height: 3rem;
+    width: 3rem;
+}
+
+.grow-bigger {
+    height: 8rem;
+    width: 8rem;
+}
+
+.link-cursor {
+    z-index: -1;
+}
+
+/*Home Page*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    z-index: 4;
+}
+
+
+
+.main-description-wrapper,
+.name-logo-wrapper {
+    width: 360px;
+    position: absolute;
+    font-family: "HK Grotesk";
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #BBAEF7;
+    margin-left: 40px;
+}
+
+.disappear {
+    display: none;
+}
+
+.name-logo-wrapper .menu-icon-wrap {
+    /* position: relative; */
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.menu-toggle {
+    margin-right: 40px;
+    transform: translate(0, -50%);
+    height: 26px;
+    width: 29px;
+    cursor: pointer;
+
+}
+
+
+.menu-toggle {
+    position: absolute;
+    right: 1.5rem;
+    top: 49%;
+    transform: translate(0, -50%);
+    height: 26px;
+    width: 29px;
+}
+
+.menu-toggle,
+.menu-toggle:hover {
+    color: #000;
+}
+
+.menu-toggle-bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 0px;
+    background-color: #bbaef7;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle-bar.menu-toggle-bar--bottom {
+    width: 100%;
+}
+
+.menu-toggle-bar.menu-toggle-bar--top {
+    transform: translate(0, -8px);
+}
+
+.menu-toggle-bar.menu-toggle-bar--bottom {
+    transform: translate(0, 8px);
+}
+
+
+
+.nav-open .menu-toggle-bar.menu-toggle-bar--top {
+    transform: translate(0, 0) rotate(45deg);
+    background-color: #28262C;
+}
+
+.nav-open .menu-toggle-bar.menu-toggle-bar--middle {
+    opacity: 0;
+}
+
+.nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
+    transform: translate(0, 0) rotate(-45deg);
+    background-color: #28262C;
+}
+
+.nav-open a {
+    z-index: 0;
+}
+
+.menu-open {
+    position: fixed;
+    background-color: #FF720D;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #28262C;
+    z-index: 3;
+    transition: 1s;
+    transform: translateY(-100vh);
+    transition: 0.7s;
+    padding: 40px;
+}
+
+.menu-active {
+    transform: translateY(0vh) !important;
+    transition: 1s;
+    /* mix-blend-mode: multiply; */
+}
+
+.menu-active .bar {
+    background-color: #8bb4ca;
+}
+
+
+/* Description section*/
+
+
+
+.back-to-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "HK Grotesk";
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #BBAEF7;
+    padding: 40px;
+
+}
+
+.credits-wrapper {
+    width: 33vh;
+}
+
+.linkedin-wrapper {
+    width: 33vh;
+}
+
+.back-to-top-wrapper {
+    display: flex;
+    width: 33vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.back-to-top-wrapper img {
+    padding-right: 20px;
+}
+
+.back-to-top-wrapper a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+    .menu-open h3 {
+        padding-top: 3vh;
+        font-size: 18vw;
+    }
+}

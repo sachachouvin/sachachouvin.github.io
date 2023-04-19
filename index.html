@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Description de 150 caractères maximum">
+	<meta name="keywords" content="mot-clé, mot-clé, mot-clé">
+	<meta name="author" content="Prénom nom">
+	<meta property="og:url" content="https://www.monsiteweb.ca" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Titre de la page" />
+	<meta property="og:description" content="Courte description de la page" />
+	<meta property="og:image" content="Lien url de votre image" />
+	<title>Base HTML et CSS | Université du Québec en Abitibi-Témiscamingue</title>
+	<link rel="icon" href="favicon.jpg" />
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/home.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+
+<body>
+	<div class="cursor"></div>
+	<div class="container">
+
+		<div class="title-container" id="#top">
+			<h1>Sacha Chouvin</h1>
+		</div>
+		<div class="header">
+			<div class="main-description-wrapper">
+				Multimedia engineering student & concept artist
+			</div>
+			<a href="index.html">
+				<div class="name-logo-wrapper">
+					Sacha Chouvin
+				</div>
+			</a>
+			<div class="menu-icon-wrap">
+				<a id="menu-toggle" class="menu-toggle">
+					<span class="menu-toggle-bar menu-toggle-bar--top"></span>
+					<span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+					<span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+				</a>
+			</div>
+		</div>
+
+		<!-- Menu open-->
+		<div class="menu-open">
+			<a href="index.html">
+				<h3>Home</h3>
+			</a>
+			<a href="work.html">
+				<h3>Work</h3>
+			</a>
+			<a href="about.html">
+				<h3>About</h3>
+			</a>
+		</div>
+
+		<div class="layout-flex" id="about-section">
+			<div class="about-wrapper layout-flex">
+				<div class="paragraph-wrapper">
+					<p>Hi! I’m Sacha, a student in multimedia engineering based in France. I'm extremely passionate
+						about
+						various forms of art, including painting, concept art, and 3D design.</p>
+				</div>
+			</div>
+			<div class="about-img-wrapper">
+				<img class="about-img" id="autoportrait-miniature" src="images/autoportrait-miniature-sacha-chouvin.jpg"
+					alt="Sacha Chouvin's portrait" />
+				<img class="about-img" id="abstract-bubble-miniature"
+					src="images/3D-abstract-painting-sacha-chouvin.jpg" alt="3D abstract painting" />
+				<img class="about-img" id="equation-poster-miniature"
+					src="images/equation-poster-miniature-sacha-chouvin.jpg" alt="Equation poster" />
+			</div>
+		</div>
+
+		<div class="selected-work-section">
+			<div class="text-slider-wrapper">
+				<div class="text-marquee">
+					<h2> Selected work&ensp;•&ensp;</h2>
+					<h2>Selected work&ensp;•&ensp;</h2>
+				</div>
+			</div>
+			<div class="galery">
+				<img class="carousel-image" src="images/equation-poster-sacha-chouvin.jpg" alt="Equation poster">
+				<img class="carousel-image" src="images/color-portrait-sacha-chouvin.jpg"
+					alt="Colorful portrait of a man">
+				<img class="carousel-image" src="images/3D-abstract-painting-sacha-chouvin.jpg" alt="Abstract bubble">
+				<img class="carousel-image" src="images/color-portrait-girl-sacha-chouvin.jpg" alt="image 4">
+			</div>
+		</div>
+
+		<div id="contact-section">
+			<div class="contact-wrapper">
+				<h2 id="lets-connect">Let’s connect!</h2>
+			</div>
+		</div>
+		<footer>
+			<div class="credits-wrapper">
+				<p>© 2023 Clara Balzano</p>
+			</div>
+			<div class="linkedin-wrapper layout-flex">
+				<a href="https://www.linkedin.com/in/sacha-chouvin-b716141b1/" target="_blank">
+					<p>Linkedin</p>
+				</a>
+			</div>
+			<div class="back-to-top-wrapper ">
+				<a href="#top">
+					<img src="images/up-arrow.svg" alt="Back to top arrow" />
+					<p>Back to top</p>
+				</a>
+			</div>
+
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+		<script src="js/global.js"></script>
+		<script src="js/home.js"></script>
+</body>
+
+</html>
