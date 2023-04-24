@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
-let contactWrapper = document.querySelector(".contact-wrapper");
+let contactWrapper = document.querySelector(".about-contact-wrapper");
 let orangeFooter = document.querySelector(".orange-footer");
 
 document.getElementById('menu-toggle')

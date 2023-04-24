@@ -2,40 +2,52 @@
 <html lang="fr">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E3T0Z20R3X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-E3T0Z20R3X');
+	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Description de 150 caractères maximum">
-	<meta name="keywords" content="mot-clé, mot-clé, mot-clé">
-	<meta name="author" content="Prénom nom">
-	<meta property="og:url" content="https://www.monsiteweb.ca" />
+	<meta name="description"
+		content="Discover the creative works of Sacha Chouvin, an up-and-coming multimedia engineer and concept artist.">
+	<meta name="keywords" content="portfolio, multimedia student, concept art">
+	<meta name="author" content="Clara Balzano">
+	<meta property="og:url" content="https://www.sachachouvin.github.io" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Titre de la page" />
-	<meta property="og:description" content="Courte description de la page" />
-	<meta property="og:image" content="Lien url de votre image" />
+	<meta property="og:title" content="Sacha Chouvin | Portfolio" />
+	<meta property="og:description"
+		content="Discover the creative works of Sacha Chouvin, an up-and-coming multimedia engineer and concept artist." />
+	<meta property="og:image" content="https://zupimages.net/viewer.php?id=23/17/vork.jpg" />
 	<title>Sacha Chouvin | Portfoilo</title>
 	<link rel="icon" href="favicon.jpg" />
-	<link rel="stylesheet" href="css/global.css">
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 
 <body>
 	<div class="cursor"></div>
 	<div class="container">
-
 		<div class="title-container" id="#top">
 			<h1>Sacha Chouvin</h1>
 		</div>
 		<div class="header">
+			<!-- Logo -->
 			<div class="main-description-wrapper">
 				Multimedia engineering student & concept artist
 			</div>
+			<!-- Logo bis-->
 			<a href="index.html">
 				<div class="name-logo-wrapper">
 					Sacha Chouvin
 				</div>
 			</a>
+			<!-- Menu -->
 			<div class="menu-icon-wrap">
 				<a id="menu-toggle" class="menu-toggle">
 					<span class="menu-toggle-bar menu-toggle-bar--top"></span>
@@ -44,7 +56,6 @@
 				</a>
 			</div>
 		</div>
-
 		<!-- Menu open-->
 		<div class="menu-open">
 			<a href="index.html">
@@ -57,7 +68,7 @@
 				<h3>About</h3>
 			</a>
 		</div>
-
+		<!-- About paragraph -->
 		<div class="layout-flex" id="about-section">
 			<div class="about-wrapper layout-flex">
 				<div class="paragraph-wrapper">
@@ -75,7 +86,7 @@
 					src="images/equation-poster-miniature-sacha-chouvin.jpg" alt="Equation poster" />
 			</div>
 		</div>
-
+		<!-- Selected work -->
 		<div class="selected-work-section">
 			<div class="text-slider-wrapper">
 				<div class="text-marquee">
@@ -88,15 +99,17 @@
 				<img class="carousel-image" src="images/color-portrait-sacha-chouvin.jpg"
 					alt="Colorful portrait of a man">
 				<img class="carousel-image" src="images/3D-abstract-painting-sacha-chouvin.jpg" alt="Abstract bubble">
-				<img class="carousel-image" src="images/color-portrait-girl-sacha-chouvin.jpg" alt="image 4">
+				<img class="carousel-image" src="images/color-portrait-girl-sacha-chouvin.jpg"
+					alt="Colorful portrait of a girl">
 			</div>
 		</div>
-
+		<!-- Contact -->
 		<div id="contact-section">
 			<div class="contact-wrapper">
 				<h2 id="lets-connect">Let’s connect!</h2>
 			</div>
 		</div>
+		<!-- Footer -->
 		<footer>
 			<div class="credits-wrapper">
 				<p>© 2023 Clara Balzano</p>
@@ -112,7 +125,6 @@
 					<p>Back to top</p>
 				</a>
 			</div>
-
 		</footer>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>

@@ -2,34 +2,38 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3T0Z20R3X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E3T0Z20R3X');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Library of Sacha Chouvin's work">
     <meta name="keywords" content="work">
-    <meta property="og:url" content="https://www.monsiteweb.ca" />
-    <meta property="og:type" content="website" />
     <meta property="og:title" content="Sacha Chouvin | Work" />
-    <meta property="og:description"
-        content="Learn more about Sacha Chouvin, a multimedia engineering student from France" />
-    <meta property="og:image" content="Lien url de votre image" />
+    <meta property="og:description" content="Expore and learn more about Sacha Chouvin's work." />
     <title>Sacha Chouvin | Work</title>
     <link rel="icon" href="favicon.jpg" />
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
-
 
 <body>
     <div class="cursor"></div>
     <div class="header">
-
+        <!-- Logo -->
         <a href="index.html">
             <div class="name-logo-wrapper">
                 Sacha Chouvin
             </div>
         </a>
+        <!-- Menu -->
         <div class="menu-icon-wrap">
             <a id="menu-toggle" class="menu-toggle">
                 <span class="menu-toggle-bar menu-toggle-bar--top"></span>
@@ -38,7 +42,6 @@
             </a>
         </div>
     </div>
-
     <!-- Menu open-->
     <div class="menu-open">
         <a href="index.html">
@@ -55,7 +58,9 @@
     <div class="work-page-title-wrapper layout-flex" id="top">
         <h1 id="work-title">Work</h1>
     </div>
+    <!-- Work gallery -->
     <div class="work-gallery">
+        <!-- Project n°1 : Bloom -->
         <div class="two-cols bloom-wrapper">
             <div class="bloom-images-wrapper">
                 <div class="bloom-sketch-row">
@@ -66,7 +71,6 @@
                     <img src="images/bloom-animation-frames.png" id="bloom-3" alt="Bloom animation frames" />
                 </div>
             </div>
-
             <div class="project-description-wrapper" id="bloom-project">
                 <div class="work-title-wrapper">
                     <h3 class="split-bloom">Bloom</h2>
@@ -99,15 +103,12 @@
                 </div>
             </div>
         </div>
-
+        <!-- Project n°2 : Equation en images -->
         <div class="two-cols equation-wrapper">
             <div class="equation-images-wrapper">
-
                 <img src="images/equation-poster-sacha-chouvin.jpg" alt="Brown Maths Poster" />
                 <img src="images/equation-poster-yellow-sacha-chouvin.jpg" alt="Yellow Maths Poster" />
-
             </div>
-
             <div class="project-description-wrapper">
                 <div class="work-title-wrapper">
                     <h3 class="split-equation">Équations en image</h2>
@@ -128,15 +129,13 @@
                 </div>
             </div>
         </div>
-
-
+        <!-- Project n°3 : Colorful portraits -->
         <div class="two-cols portraits-wrapper">
             <div class="portrait-images-wrapper">
-                <img src="images/color-portrait-sacha-chouvin.jpg" alt="Brown Maths Poster" />
-                <img src="images/color-portrait-blue-sacha-chouvin.jpg" alt="Yellow Maths Poster" />
-                <img src="images/color-portrait-girl-sacha-chouvin.jpg" alt="Yellow Maths Poster" />
+                <img src="images/color-portrait-sacha-chouvin.jpg" alt="Orange portrait" />
+                <img src="images/color-portrait-blue-sacha-chouvin.jpg" alt="Blue portrait" />
+                <img src="images/color-portrait-girl-sacha-chouvin.jpg" alt="Light blue portrait" />
             </div>
-
             <div class="project-description-wrapper">
                 <div class="work-title-wrapper">
                     <h3 class="split-portrait">Colorful Portraits</h2>
@@ -156,9 +155,8 @@
                 </div>
             </div>
         </div>
-
     </div>
-
+    <!-- Footer -->
     <footer>
         <div class="credits-wrapper">
             <p>© 2023 Clara Balzano</p>
